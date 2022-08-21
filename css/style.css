@@ -22,10 +22,39 @@
     display: none;
 }
 
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.conteiner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
 /* основной текст #757575*/
 /* вторичный цвет текста #212121*/
 /* цвет фона #F5F5F5*/
 /* акцент #2196F3*/
+
+/*header*/
 
 .main-header {
     background-color: #FFFFFF;
@@ -48,12 +77,13 @@ font-size: 14px;
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        /* identical to box height */
-    
-        letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-black {
@@ -67,22 +97,43 @@ font-size: 14px;
 
 
 .menu-item {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-    
-        color:var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--secondary-text-color);
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-left: auto;
 }
 
 
-
-
 .menu .current {
-        color: var(--accent-color);
+    color: var(--accent-color);
+}
         
-    }
-
 .menu-link:hover,
 .menu-link:focus {
 color: var(--accent-color);
@@ -97,29 +148,20 @@ color: var(--accent-color);
 .contact-mail {
     color: var(--primary-text-color);
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contact-tel {
     color: var(--primary-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-.contact-adress {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        /* or 171% */
-    
-        letter-spacing: 0.03em;
-    
-        color: #FFFFFF;
-}
+
 
 .contact-mail:hover,
 .contact-mail:focus {
@@ -146,106 +188,169 @@ color: var(--accent-color);
     color:var(--accent-color);
 }
 
+/*    Hero    */
+
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
-.footer {
-    background-color: #2F303A;
-}
+
 
 .hero-title {
    
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        color: #FFFFFF;
-        text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    margin-bottom: 30px;
+}
+
+.hero-content {
+    align-items: center;
 }
 
 .modal-button {
+    width: 216px;
+    height: 50px;
     font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        color: #FFFFFF;
-        background-color: #188CE8;
-        cursor: pointer;
+    font-size: 16px;
+    line-height: 1.88;
+    color: #FFFFFF;
+    background-color: #188CE8;
+    cursor: pointer;
+}
+
+/* work*/
+
+.content-work{
+
+}
+
+.benefits-list {
+    display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding-top: 94px;
+        padding-bottom: 94px;
 }
 
 .section-title {
     color: var(--secondary-text-color);
-    
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 
 .work-title {
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
 }
 
 .benefits-text {
     font-weight: 400;
-        line-height: 1.71;
-        /* or 171% */
-    
-        letter-spacing: 0.03em;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*about*/
+
+.img-list {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: auto;
+    margin-top: 50px;
+}
+
+.about {
+    margin-bottom: 94px;
+}
+
+/* team */
+
+.personal-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.img-team {
+    margin-bottom: 30px;
+}
+
+
+
+.content-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .personal-title {
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        /* identical to box height */
-        letter-spacing: 0.03em;
-        color: var(--secondary-text-color)
+   font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    color: var(--secondary-text-color)
+    
 }
 
 .personal-text {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
-        /* identical to box height */
-        letter-spacing: 0.03em;
-        
-}
-
-.contact-mail-footer {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        /* or 171% */
-    
-        letter-spacing: 0.03em;
-    
-        color: rgba(255, 255, 255, 0.6);
-}
-
-.contact-tel-footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    /* or 171% */
-
+    font-size: 16px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
+    }
 
-    color: rgba(255, 255, 255, 0.6);
+/*  Portfolio  */
+
+.content-header-portfolio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 94px;
 }
 
-.footer-contact {
-    font-style: normal;
+.projects-content{
+    margin-bottom: 94px;
+   
 }
 
-.projects {
+    
+
+/*.projects {
     background-color: #F5F5F5;
+}*/
+
+.filter {
+    display: flex;
+   justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-item {
+    flex-basis: calc(100%-60/3);
+    border-bottom: 1px solid #EEEEEE;
+
+}
+
+.projet-img {
+    margin-bottom: 30px;
 }
 
 
@@ -253,15 +358,14 @@ color: var(--accent-color);
 
 .button {
    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    /* identical to box height, or 162% */
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    color: var(--secondary-text-color);
-    background-color: #F5F4FA;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63;
+   text-align: center;
+   letter-spacing: 0.03em;
+   cursor: pointer;
+   color: var(--secondary-text-color);
+   background-color: #F5F4FA;
 }
 
 .filter .current {
@@ -279,16 +383,81 @@ color: var(--accent-color);
 
     font-size: 18px;
     line-height: 2;
-    /* identical to box height, or 200% */
-
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
+    margin-bottom: 4px;
+    margin-right: 24px;
+    margin-left: 24px;
 }
 .project-text {
     
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
-    
     letter-spacing: 0.03em;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding-bottom: 20px;
 }
+
+/* footer */
+
+.content-footer {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+
+.contact-adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-contact {
+    font-style: normal;
+}
+
+.contact-footer {
+    margin-bottom: auto;
+    gap: 9px;
+}
+
+.contact-mail-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-tel-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+/*.logo-footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}*/
