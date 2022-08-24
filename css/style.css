@@ -46,6 +46,25 @@ ol {
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
+    
+    
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -124,7 +143,6 @@ font-size: 14px;
 
 .contact {
     display: flex;
-    align-items: center;
     column-gap: 50px;
     margin-left: auto;
 }
@@ -193,12 +211,14 @@ color: var(--accent-color);
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 
 
 .hero-title {
-   
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -206,9 +226,9 @@ color: var(--accent-color);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
-    padding-bottom: 280px;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-content {
@@ -224,19 +244,16 @@ color: var(--accent-color);
     color: #FFFFFF;
     background-color: #188CE8;
     cursor: pointer;
+    border: 216px 50px;
+    border-radius: 4px;
 }
 
 /* work*/
 
 
-
-
 .benefits-list {
     display: flex;
-        align-items: center;
-        column-gap: 30px;
-        padding-top: 94px;
-        padding-bottom: 94px;
+    column-gap: 30px;
 }
 
 .section-title {
@@ -254,6 +271,12 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+    align-items: flex-start;
+}
+
+.work-item {
+    width: 270px;
+   
 }
 
 .benefits-text {
@@ -264,6 +287,10 @@ color: var(--accent-color);
 
 /*about*/
 
+.about {
+    padding-top: 0px;
+}
+
 .img-list {
     display: flex;
     column-gap: 30px;
@@ -271,9 +298,7 @@ color: var(--accent-color);
     margin-top: 50px;
 }
 
-.about {
-    margin-bottom: 94px;
-}
+
 
 /* team */
 
@@ -283,14 +308,16 @@ color: var(--accent-color);
 }
 
 .img-team {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-
-
-.content-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.team-title {
+    margin-bottom: 50px;
+    color: var(--secondary-text-color);
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
 }
 
 .personal-title {
@@ -308,6 +335,7 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
     }
 
 /*  Portfolio  */
@@ -318,22 +346,21 @@ color: var(--accent-color);
     margin-bottom: 94px;
 }
 
-.projects-content{
-    margin-bottom: 94px;
-   
-}
+
 
     
 
-/*.projects {
+.projects {
     background-color: #F5F5F5;
-}*/
+    padding-top: 0px;
+}
 
 .filter {
     display: flex;
    justify-content: center;
     text-align: center;
     margin-bottom: 50px;
+    gap: 8px;
 }
 
 .card-set {
@@ -343,15 +370,10 @@ color: var(--accent-color);
 }
 
 .project-item {
-    flex-basis: calc(100%-60/3);
+    flex-basis: calc((100% - 60)/ 3 );
     border-bottom: 1px solid #EEEEEE;
 
 }
-
-.projet-img {
-    margin-bottom: 30px;
-}
-
 
 
 
@@ -365,6 +387,9 @@ color: var(--accent-color);
    cursor: pointer;
    color: var(--secondary-text-color);
    background-color: #F5F4FA;
+   border: none;
+   border-radius: 4px;
+   padding: 6px 22px;
 }
 
 .filter .current {
@@ -384,17 +409,18 @@ color: var(--accent-color);
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
     margin-bottom: 4px;
-    margin-right: 24px;
-    margin-left: 24px;
 }
 .project-text {
     
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    margin-right: 24px;
-    margin-left: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
     padding-bottom: 20px;
 }
 
@@ -402,9 +428,14 @@ color: var(--accent-color);
 
 .content-footer {
     display: block;
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
-    flex-direction: column;
+
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .contact-adress {
@@ -447,7 +478,6 @@ color: var(--accent-color);
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    margin-top: 60px;
     margin-bottom: 20px;
 
 }
